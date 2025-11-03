@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo de Posicionamiento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      height: 2000px; /* para mostrar sticky y fixed */
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .static {
+      background-color: #3498db;
+      position: static;
+    }
+
+    .relative {
+      background-color: #2ecc71;
+      position: relative;
+      top: 20px;
+      left: 20px;
+    }
+
+    .absolute {
+      background-color: #e74c3c;
+      position: absolute;
+      top: 150px;
+      left: 250px;
+    }
+
+    .fixed {
+      background-color: #9b59b6;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+
+    .sticky-container {
+      margin-top: 300px;
+      height: 400px;
+      background-color: #ecf0f1;
+      padding: 10px;
+    }
+
+    .sticky {
+      background-color: #f39c12;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box static">Static</div>
+  <div class="box relative">Relative</div>
+  <div class="box absolute">Absolute</div>
+  <div class="box fixed">Fixed</div>
+
+  <div class="sticky-container">
+    <div class="box sticky">Sticky</div>
+    
+  </div>
+
+</body>
+</html>
